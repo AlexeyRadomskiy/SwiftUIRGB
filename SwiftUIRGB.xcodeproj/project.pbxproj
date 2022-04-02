@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		6C7C890627F7963A00555792 /* SwiftUIRGBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C890527F7963A00555792 /* SwiftUIRGBApp.swift */; };
-		6C7C890827F7963A00555792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C890727F7963A00555792 /* ContentView.swift */; };
+		6C7C890827F7963A00555792 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C890727F7963A00555792 /* ColorView.swift */; };
 		6C7C890A27F7963D00555792 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C890927F7963D00555792 /* Assets.xcassets */; };
 		6C7C890D27F7963D00555792 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C890C27F7963D00555792 /* Preview Assets.xcassets */; };
+		6C7C891427F79B2200555792 /* ColorValueTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C891327F79B2200555792 /* ColorValueTextView.swift */; };
+		6C7C891627F79C9E00555792 /* ColorValueTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C891527F79C9E00555792 /* ColorValueTextFieldView.swift */; };
+		6C7C891A27F7A1E800555792 /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C891927F7A1E800555792 /* ColorSliderView.swift */; };
+		6C7C891C27F7A44600555792 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7C891B27F7A44600555792 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C7C890227F7963A00555792 /* SwiftUIRGB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIRGB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7C890527F7963A00555792 /* SwiftUIRGBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRGBApp.swift; sourceTree = "<group>"; };
-		6C7C890727F7963A00555792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6C7C890727F7963A00555792 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		6C7C890927F7963D00555792 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C7C890C27F7963D00555792 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C7C891327F79B2200555792 /* ColorValueTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorValueTextView.swift; sourceTree = "<group>"; };
+		6C7C891527F79C9E00555792 /* ColorValueTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorValueTextFieldView.swift; sourceTree = "<group>"; };
+		6C7C891927F7A1E800555792 /* ColorSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
+		6C7C891B27F7A44600555792 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				6C7C890527F7963A00555792 /* SwiftUIRGBApp.swift */,
-				6C7C890727F7963A00555792 /* ContentView.swift */,
+				6C7C891B27F7A44600555792 /* ContentView.swift */,
+				6C7C890727F7963A00555792 /* ColorView.swift */,
+				6C7C891327F79B2200555792 /* ColorValueTextView.swift */,
+				6C7C891527F79C9E00555792 /* ColorValueTextFieldView.swift */,
+				6C7C891927F7A1E800555792 /* ColorSliderView.swift */,
 				6C7C890927F7963D00555792 /* Assets.xcassets */,
 				6C7C890B27F7963D00555792 /* Preview Content */,
 			);
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C7C890827F7963A00555792 /* ContentView.swift in Sources */,
+				6C7C891A27F7A1E800555792 /* ColorSliderView.swift in Sources */,
+				6C7C891627F79C9E00555792 /* ColorValueTextFieldView.swift in Sources */,
+				6C7C891C27F7A44600555792 /* ContentView.swift in Sources */,
+				6C7C890827F7963A00555792 /* ColorView.swift in Sources */,
+				6C7C891427F79B2200555792 /* ColorValueTextView.swift in Sources */,
 				6C7C890627F7963A00555792 /* SwiftUIRGBApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,18 +291,17 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexeyRadomskiy.SwiftUIRGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,18 +319,17 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AlexeyRadomskiy.SwiftUIRGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
